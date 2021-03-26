@@ -1,0 +1,1 @@
+.Lattice{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto;column-gap:6rem;row-gap:6rem}.Lattice .Pane{display:flex;flex-flow:column nowrap}@media screen and (max-width: 599px) and (orientation: portrait), screen and (max-width: 575px){.Lattice{grid-template-columns:1fr;row-gap:3rem}}

@@ -1,0 +1,49 @@
+.QuickResource {
+	background-color: $whisper;
+	margin: 0 0 3rem;
+	transition: box-shadow 0.3s;
+
+	&,
+	div {
+		align-items: stretch;
+		flex-flow: column nowrap;
+		height: auto;
+		justify-content: flex-start;
+	}
+
+	img {
+		transition: opacity 0.3s;
+	}
+	.ImgHat {
+		.Row {
+		img {
+			object-fit: cover;
+			height: 22rem;
+		}
+	}
+}
+	.caption {
+		color: $teal;
+		font-size: 1.8rem;
+		margin-top: 0;
+		padding: 10px;
+		transition: color 0.3s;
+	}
+
+	&:hover {
+		box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+
+		img {
+			opacity: 0.6;
+		}
+
+		.caption {
+			color: $blue;
+		}
+	}
+}
+
+.Row .QuickResource {
+	flex: 0 0 calc(33.3333% - 15px);
+	width: calc(33.3333% - 15px);
+}

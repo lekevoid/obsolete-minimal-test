@@ -1,0 +1,11 @@
+@media screen and (max-width: $tablet_max_width) {
+	.CTAArrow {}
+}
+
+@media screen and (max-width: $mobile_max_width) {
+	.CTAArrow {
+		.shaft {
+			padding: 1.5rem 3rem;
+		}
+	}
+}

@@ -1,0 +1,81 @@
+.Tank.CardPanel {
+	margin-top: 7rem;
+	max-width: 1100px;
+
+	.title {
+		margin-bottom: 9rem;
+		padding: 0 8rem;
+
+		h3 {
+			color: #00F;
+			font-size: 3rem;
+			margin-bottom: 2rem;
+			text-align: center;
+		}
+
+		p {
+			font-size: 1.8rem;
+			margin-left: 11rem;
+			margin-right: 11rem;
+			text-align: center;
+		}
+	}
+
+	.cards {
+		display: flex;
+		flex-flow: row;
+
+		.card_wrapper {
+			max-width: 50%;
+			width: 50%;
+
+			.card_title {
+				margin: 0 3rem 3rem;
+
+				h3 {
+					color: #00F;
+					font-size: 2rem;
+					margin-bottom: 2rem;
+					text-align: center;
+				}
+
+				p {
+					font-size: 1.8rem;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.card {
+		align-items: center;
+		background-color: #FFF;
+		box-shadow: 4px 4px 20px #E4E6EB;
+		display: flex;
+		flex: 0 1 calc(50% - 6rem);
+		flex-flow: column nowrap;
+		height: 30rem;
+		margin: 0 3rem;
+		min-height: 30rem;
+		padding: 3rem;
+
+		img {
+			height: auto;
+			max-width: 80%;
+			width: auto;
+		}
+
+		span {
+			@include fontSuperBold;
+			font-size: 2rem;
+			line-height: 140%;
+			text-transform: uppercase;
+		}
+
+		a {
+			margin-bottom: 4rem;
+			margin-top: 2rem;
+			text-align: center;
+		}
+	}
+}

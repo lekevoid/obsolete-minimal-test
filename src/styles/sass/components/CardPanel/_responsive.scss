@@ -1,0 +1,62 @@
+@media screen and (max-width: $tablet_max_width) {
+	.CardPanel {
+		.title {
+			padding: 0;
+
+			p {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+
+		.cards {
+			.card_wrapper {
+				max-width: 100%;
+				width: 100%;
+
+				.card {
+					min-width: 40%;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: $xs_max_width) {
+	.CardPanel {
+		flex-flow: column;
+		margin: 8rem auto 3rem;
+
+		.title {
+			margin-bottom: 6rem;
+		}
+
+		.cards {
+			flex-flow: column;
+		}
+
+		.card {
+			flex-flow: column-reverse;
+			justify-content: center;
+			margin: 0 0 6rem;
+			padding: 6rem 3rem;
+
+			span {
+				line-height: 120%;
+			}
+
+			a {
+				margin: 0 auto;
+				max-width: 40rem;
+				width: 90%;
+			}
+
+			img {
+				margin-bottom: 3rem;
+				max-width: 24rem;
+				width: 60%;
+			}
+		}
+	}
+}

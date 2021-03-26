@@ -1,0 +1,25 @@
+.Tank {
+	box-sizing: border-box;
+	display: block;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0;
+	transition: padding 0.3s;
+	width: 100%;
+
+	&.base_1400 {
+		max-width: 1400px;
+	}
+
+	&.base_1100 {
+		max-width: 1100px;
+	}
+
+	&.base_1000 {
+		max-width: 1000px;
+	}
+
+	&.base_900 {
+		max-width: 900px;
+	}
+}

@@ -1,0 +1,651 @@
+@media screen and (max-width: $tank_max_width) {
+	.Billboard {
+		&#ebook_carthelm_add_real_world_kick {
+			margin: 0;
+
+			.inner {
+				border-radius: 0;
+			}
+
+			.CTA {
+				zoom: 1;
+			}
+		}
+
+		&#programmatic_u {
+			.person {
+				left: 60%;
+			}
+
+			.badge {
+				right: $tankPadding;
+			}
+		}
+	}
+
+	.Tank>.Billboard {
+
+		&,
+		&#ebook_carthelm_add_real_world_kick {
+			border-radius: 0;
+			margin-left: -$tankPadding;
+			margin-right: -$tankPadding;
+			max-width:calc(100% + #{$tankPadding*2});
+			width:calc(100% + #{$tankPadding*2});
+		}
+
+		&#programmatic_u {
+			.badge {
+				right: $tankPadding;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet_max_width) {
+	.Billboard {
+		&#ebook_5_mistakes {
+			.inner {
+				padding-left: 9em;
+			}
+
+			h3 {
+				max-width: 11em;
+			}
+		}
+
+		&#big_voice_award {
+			font-size: 0.9rem;
+
+			.inner {
+				grid-column-gap: 3rem;
+			}
+		}
+
+		&#ebook_adding_digital_to_your_foo_nnnnnnn {
+			background-position: center center;
+			height: 40em;
+
+			.inner {
+				padding-left: 45%;
+			}
+
+			h3 {
+				font-size: 4.2em;
+			}
+		}
+
+		&#ebook_carthelm_add_real_world_kick {
+
+			.inner {
+				background-position: -15% center;
+				padding-left: 40%;
+			}
+
+			h3 {
+				margin-top: -1rem;
+			}
+		}
+
+		&#ebook_successful_nnnnnnn {
+			.inner {
+				padding: 0;
+			}
+
+			.text {
+				padding-left: 9em;
+			}
+
+			h3 {
+				font-size: 4em;
+				line-height: 140%;
+			}
+		}
+
+		&#ebook_optimize_foo_sales {
+			font-size: 0.8rem;
+			max-height: 46vw;
+
+			.inner:after {
+				height: 70rem;
+				max-width: 80rem;
+				right: -30rem;
+				top: 3rem;
+				width: 80rem;
+			}
+
+			.tagline {
+				margin-bottom: 3rem;
+			}
+		}
+
+		&#soc2 {
+			.badge {
+				flex: 0 0 30%;
+				max-width: 30%;
+			}
+
+			.text_wrap {
+				flex: 0 0 65%;
+				max-width: 66rem;
+			}
+
+			h3 {
+				font-size: 2.8em;
+			}
+		}
+	}
+
+	.Tank>.Billboard {
+		&#ebook_adding_digital_to_your_foo_nnnnnnn h3 {
+			font-size: 4.2em;
+		}
+
+		&#ebook_modernize_foo_business {
+			font-size: 1rem;
+
+			.inner {
+				padding-right: $tankPadding;
+			}
+		}
+
+		&#soc2 {
+			.inner {
+				padding: 0 $tankPadding;
+			}
+
+			.badge {
+				flex: 0 0 30%;
+				max-width: 30%;
+			}
+
+			h3 {
+				font-size: 2.8em;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: $mobile_max_width) {
+	.Billboard {
+		&#ebook_5_mistakes {
+			background-position-x: 10em;
+			background-size: auto 40em;
+			height: 40em;
+		}
+
+		&#ebook_adding_digital_to_your_foo_nnnnnnn {
+			background-position-x: 35%;
+
+			h3 {
+				max-width: 10em;
+			}
+		}
+
+		&#ebook_carthelm_add_real_world_kick {
+			.inner {
+				background-position-x: -20em;
+				height: 40em;
+				padding-left: 40%;
+			}
+		}
+
+		&#ebook_modernize_foo_business {
+			.inner {
+				padding-bottom: 9em;
+				padding-top: 12em;
+			}
+		}
+
+		&#ebook_optimize_foo_sales {
+			font-size: 0.6rem;
+		}
+
+		&#soc2 {
+			height: 36em;
+
+			.badge {
+				flex-basis: 30%;
+				max-width: 30%;
+			}
+
+			.text_wrap {
+				flex-basis: 65%;
+				max-width: 65%;
+			}
+		}
+
+		&#programmatic_u {
+			.person {
+				max-width: 30%;
+			}
+
+			.badge {
+				max-width: 16%;
+			}
+		}
+		&#programmatic_u_certified {
+			background: transparent;
+			align-items: center;
+			min-height: 20em;
+			max-width: 1200px;
+			margin: 2rem auto 8rem auto;
+			padding: 3rem 0 8rem 0;
+			border-radius: 1rem;
+			flex-flow: column;
+
+			.inner {
+				padding-left: $tankPadding;
+				padding-right: $tankPadding;
+				display: flex;
+				justify-content: flex-end;
+				.tagline_container {
+					width: 100%;
+					display: flex;
+					align-items: center;
+					flex-flow: column;
+				}
+			}
+
+			.person {
+				background: transparent url("../../../assets/images/resources/img.png") center bottom no-repeat;
+				background-size: contain;
+				height: 45rem;
+				left: 0;
+				position: relative;
+				transform: translateX(-0%);
+				width: 100%;
+			}
+
+
+			h3 {
+				@include fontReg;
+				color: #00F;
+				font-size: 3em;
+				font-variant: normal;
+				margin-bottom: 1.2em;
+				text-transform: none;
+				text-align: center;
+			}
+
+			&:hover {
+				.CTA {
+					background-color: #FFF;
+					color: $red;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile_max_width) and (orientation: portrait) {
+	.Billboard {
+		&#big_voice_award {
+			padding-bottom: 6em;
+			padding-top: 6em;
+
+			.inner {
+				grid-template-columns: 1fr;
+				grid-row-gap: 3rem;
+				text-align: center;
+			}
+		}
+
+		&#ebook_adding_digital_to_your_foo_nnnnnnn {
+			height: 36em;
+
+			h3 {
+				font-size: 4em;
+			}
+		}
+
+		&#ebook_carthelm_add_real_world_kick {
+			margin-left: $tankPadding;
+			margin-right: $tankPadding;
+			width: auto;
+
+			.inner {
+				align-items: center;
+				background: $carthelmBlue url("../../../assets/images/resources/img.png") left top no-repeat;
+				background-position-x: -75%;
+				background-size: contain;
+				border-radius: 4rem;
+				flex-flow: column nowrap;
+				height: 50rem;
+				justify-content: flex-end;
+				padding: 6em $tankPaddingPhone;
+			}
+
+			.logo {
+				bottom: auto;
+				height: 6em;
+				left: 32%;
+				right: auto;
+				top: 5em;
+				width: 25em;
+			}
+
+			h3 {
+				max-width: 100%;
+				padding: 0 0 0 calc(35% + 1em);
+				width: 100%;
+			}
+
+			.CTA {
+				font-size: 2.4rem;
+			}
+		}
+
+		&#ebook_modernize_foo_business {
+			font-size: 0.8rem;
+		}
+
+		&#ebook_optimize_foo_sales {
+			font-size: 0.7rem;
+			height: auto;
+			max-height: none;
+			padding-bottom: 32rem;
+			padding-top: 6rem;
+
+			.inner {
+				position: static;
+
+				&:after {
+					bottom: -20rem;
+					max-height: 48rem;
+					max-width: 100%;
+					right: 50%;
+					top: auto;
+					transform: translateX(50%);
+					width: calc(100% - 80px);
+				}
+			}
+
+			h3 {
+				@include fontReg;
+				max-width: 100%;
+				text-align: center;
+				width: 100%;
+			}
+
+			.tagline {
+				font-size: 4.4em;
+				max-width: 100%;
+				text-align: center;
+				width: 100%;
+			}
+
+			.CTA {
+				margin: 0 auto;
+			}
+		}
+
+		&#ebook_successful_nnnnnnn {
+			font-size: 0.8rem;
+		}
+
+		&#programmatic_u {
+			background: linear-gradient(to bottom, #56ABD5 0%, #4FD0E3 25%, #47CFE1 50%, #6780C8 100%);
+			height: 50rem;
+			padding: 3em;
+
+			.person {
+				background-position: left bottom;
+				bottom: 0;
+				height: 70%;
+				left: 30%;
+				max-height: 30em;
+				max-width: 40em;
+				position: absolute;
+				width: 70%;
+				z-index: 1;
+			}
+
+			.badge {
+				bottom: 1.2em;
+				height: 14em;
+				max-width: 14em;
+				position: absolute;
+				right: 8%;
+				width: 25%;
+				z-index: 1;
+			}
+
+			.inner {
+				align-items: center;
+				display: flex;
+				flex-flow: column nowrap;
+				height: 100%;
+				justify-content: space-between;
+				padding: 0;
+			}
+
+			h3 {
+				@include fontAltBolder;
+				font-size: 3.6em;
+				line-height: 150%;
+				max-width: 15em;
+				text-align: center;
+				width: 100%;
+			}
+
+			.CTA {
+				flex: 1 1 auto;
+				font-size: 2.4rem;
+				line-height: 120%;
+				max-height: 6.6rem;
+				min-height: auto;
+				padding: 1.4rem 2.6rem 1.2rem;
+			}
+		}
+
+		&#soc2 {
+			font-size: 1.2rem;
+
+			&:after {
+				@include bg;
+				background: linear-gradient(to right, transparent 20%, #F9F9F9 50%);
+				content: "";
+				z-index: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile_max_width) and (orientation: landscape) {
+	.Billboard {
+
+		&#ebook_successful_nnnnnnn,
+		&#ebook_modernize_foo_business {
+			font-size: 0.8rem;
+		}
+
+		&#ebook_optimize_foo_sales .inner:after {
+			left: 50%;
+			right: auto;
+			top: -1rem;
+		}
+	}
+}
+
+/* Just to compensate for the scroll bar */
+@media screen and (max-width: $xs_max_width) and (orientation:portrait) and (hover:hover) and (pointer:fine) {
+	.Billboard#programmatic_u {
+		padding-right: 17px;
+
+		.badge {
+			transform: translateX(-17px);
+		}
+	}
+}
+
+@media screen and (max-width: $xs_max_width) and (orientation: portrait) {
+	.Billboard {
+		&#ebook_5_mistakes {
+			background-position-x: 75%;
+			background-size: cover;
+			height: 60em;
+
+			&:before {
+				@include bg;
+				background: linear-gradient(to bottom, transparent 50%, rgba(#F9F9F9, 0.7) 70%, #F9F9F9 100%);
+				content: "";
+				z-index: 1;
+			}
+
+			.inner {
+				justify-content: flex-end;
+				padding-bottom: 6em;
+				z-index: 10;
+			}
+
+			h3 {
+				text-shadow: 2px 2px 4px #FFF, 2px 2px 4px #FFF, 1px 1px 4px #FFF, 1px 1px 4px #FFF;
+			}
+		}
+
+		&#ebook_adding_digital_to_your_foo_nnnnnnn {
+			background-position-x: left;
+			height: 42em;
+
+			.inner {
+				align-items: center;
+				display: flex;
+				flex-flow: column nowrap;
+				padding-left: $tankPaddingXS;
+			}
+
+			h3 {
+				line-height: 140%;
+				text-align: center;
+				text-shadow: 2px 2px 4px $blue, 2px 2px 4px $blue, 2px 2px 4px $blue, 2px 2px 4px $blue;
+			}
+
+			.CTA {
+				margin: 0 auto;
+			}
+		}
+
+		&#ebook_carthelm_add_real_world_kick {
+			margin: 0;
+			padding: 0;
+
+			.inner {
+				border-radius: 0;
+				padding: 6em 0;
+			}
+
+			h3 {
+				font-size: 3em;
+			}
+		}
+
+		&#ebook_modernize_foo_business {
+			background-position: 15% center;
+			height: 50rem;
+
+			.inner {
+				align-items: center;
+				height: 100%;
+				justify-content: flex-end;
+				padding-bottom: 6rem;
+				padding-left: $tankPaddingXS;
+				padding-right: $tankPaddingXS;
+
+				h3 {
+					font-size: 6em;
+					text-shadow: 2px 2px 4px $blue, 2px 2px 4px $blue, 2px 2px 4px $blue, 2px 2px 4px $blue;
+				}
+			}
+		}
+
+		&#ebook_optimize_foo_sales {
+			.inner:after {
+				bottom: -16rem;
+				width: calc(100% - 40px);
+			}
+		}
+
+		&#ebook_successful_nnnnnnn {
+			font-size: 1rem;
+			height: 70em;
+			max-height: 80vh;
+
+			.inner {
+				flex-flow: column nowrap;
+
+			}
+
+			.text {
+				flex: 1 1 50%;
+				max-width: 100%;
+				order: 2;
+				width: 100%;
+			}
+
+			.ebook {
+				flex: 1 1 50%;
+				height: auto;
+				margin-bottom: -6em;
+				max-width: 100%;
+				order: 1;
+				position: relative;
+				right: -5%;
+
+				width: 100%;
+			}
+		}
+
+		&#programmatic_u {
+			.badge {
+				bottom: 1em;
+				height: 12em;
+				max-width: 12em;
+				right: 1em;
+			}
+
+			h3 {
+				font-size: 3em;
+			}
+		}
+
+		&#soc2 {
+			height: auto;
+
+			&:after {
+				background: linear-gradient(to bottom, transparent 20%, rgba(#F9F9F9, 0.7) 50%, #F9F9F9 100%);
+			}
+
+			.badge {
+				flex-basis: 8em;
+				height: 8em;
+				margin-bottom: 6em;
+				max-width: 80%;
+				width: 80%;
+			}
+
+			.inner {
+				flex-flow: column nowrap;
+				height: 100%;
+				justify-content: space-between;
+				padding-bottom: 6em;
+				padding-top: 6em;
+			}
+
+			.text_wrap {
+				flex-basis: auto;
+				max-width: 100%;
+			}
+
+			.text {
+				text-align: center;
+			}
+
+			h3,
+			p {
+				text-align: left;
+			}
+		}
+	}
+}

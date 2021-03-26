@@ -1,0 +1,257 @@
+@mixin embed_font($name, $file, $weight) {
+	$filepath: "/fonts/"+$file;
+
+	@font-face {
+		font-family: $name;
+		font-weight: $weight;
+		font-display: swap;
+		src: url($filepath+".woff2") format("woff2"),
+			url($filepath+".woff") format("woff");
+	}
+}
+
+@include embed_font("Roboto", "Roboto-Regular", "400");
+@include embed_font("Roboto Light", "Roboto-Light", "300");
+@include embed_font("Roboto Medium", "Roboto-Medium", "500");
+@include embed_font("Roboto Regular", "Roboto-Regular", "400");
+@include embed_font("Roboto Bold", "Roboto-Bold", "700");
+@include embed_font("Roboto Black", "Roboto-Black", "900");
+@include embed_font("Merriweather", "Merriweather-Regular", "400");
+@include embed_font("Merriweather Regular", "Merriweather-Regular", "400");
+@include embed_font("Merriweather Bold", "Merriweather-Bold", "700");
+@include embed_font("Merriweather Black", "Merriweather-Black", "900");
+@include embed_font("SofiaPro", "SofiaPro", "400");
+@include embed_font("SofiaProBold", "SofiaProBold", "700");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include fontBolder;
+	box-sizing: border-box;
+	color: $blue;
+	line-height: 140%;
+	margin: 0;
+	max-width: 100%;
+	padding: 0;
+}
+
+h1,
+h2,
+h3 {
+	text-transform: uppercase;
+}
+
+blockquote,
+li,
+p,
+span,
+ul,
+.text {
+	@include fontReg;
+	box-sizing: border-box;
+	color: $blue;
+	line-height: 140%;
+	margin: 0;
+	max-width: 100%;
+	padding: 0;
+}
+
+p {
+	font-size: 2.2rem;
+}
+
+a {
+	color: $teal;
+	line-height: inherit;
+}
+
+blockquote,
+span {
+	color: inherit;
+	font-family: inherit;
+}
+
+em {
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+hr {
+	border-color: $lightGrey;
+	border-style: solid;
+	margin: 6rem 0;
+}
+
+.caps {
+	text-transform: capitalize;
+}
+
+.all_caps {
+	text-transform: uppercase;
+}
+
+.text_blue {
+	color: $blue;
+}
+
+.text_grey {
+	color: $grey;
+}
+
+.font_size_6 {
+	font-size: 6rem;
+}
+
+.font_size_5 {
+	font-size: 5rem;
+}
+
+.font_size_4 {
+	font-size: 4rem;
+}
+
+.font_size_3_4 {
+	font-size: 3.4rem;
+}
+
+.font_size_3_2 {
+	font-size: 3.2rem;
+}
+
+.font_size_3 {
+	font-size: 3rem;
+}
+
+.font_size_2 {
+	font-size: 2rem;
+}
+
+.font_size_2_4 {
+	font-size: 2.4rem;
+}
+
+.font_size_2_2 {
+	font-size: 2.2rem;
+}
+
+.font_size_1_8 {
+	font-size: 1.8rem;
+}
+
+.font_size_1_6 {
+	font-size: 1.6rem;
+}
+
+.font_size_1_4 {
+	font-size: 1.4rem;
+}
+
+.font_size_1_2 {
+	font-size: 1.2rem;
+}
+
+.font_superbold {
+	@include fontSuperBold;
+}
+
+.font_bolder {
+	@include fontBolder;
+}
+
+.font_bold {
+	@include fontBold;
+}
+
+.font_reg {
+	@include fontReg;
+}
+
+.font_alt_bold {
+	@include fontAltBold;
+}
+
+.font_alt {
+	@include fontAlt;
+}
+
+.font_alt_lighter {
+	@include fontAltLighter;
+}
+
+.longtext {
+	display: inline-block;
+
+	br {
+		display: none;
+	}
+}
+
+@media screen and (max-width: $tablet_max_width) {
+	.font_size_3_2 {
+		font-size: 3.2rem;
+	}
+
+	.font_size_3 {
+		font-size: 3rem;
+	}
+
+	.font_size_2_4 {
+		font-size: 2.4rem;
+	}
+
+	.font_size_2_2 {
+		font-size: 2.2rem;
+	}
+
+	.font_size_1_8 {
+		font-size: 1.8rem;
+	}
+
+	.font_size_1_6 {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: $mobile_max_width) and (orientation:portrait) {
+
+	/* Calculation : 16px ~= 2.6rem ///  px * .1625 = rem */
+	.font_size_3_4 {
+		font-size: 3.6rem;
+	}
+
+	.font_size_3_2 {
+		font-size: 3.4rem;
+	}
+
+	.font_size_3 {
+		font-size: 3.2rem;
+	}
+
+	.font_size_2_4 {
+		font-size: 2.6rem;
+	}
+
+	.font_size_2_2 {
+		font-size: 2.4rem;
+	}
+
+	.font_size_1_8 {
+		font-size: 2rem;
+	}
+
+	.font_size_1_6 {
+		font-size: 1.8rem;
+	}
+
+	.sm_font_size_1_8 {
+		font-size: 1.8rem;
+	}
+
+	hr {
+		margin: $tankPadding auto;
+		width: calc(100% - #{$tankPadding});
+	}
+}

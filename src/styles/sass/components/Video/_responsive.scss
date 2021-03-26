@@ -1,0 +1,19 @@
+@media screen and (max-width: $tablet_max_width) {
+	.Video {
+		max-width: 100%;
+		width: 80vw;
+
+		.poster .tagline {}
+
+		&#carousel_video {
+			margin: 0;
+			width: 40vw;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile_max_width) {
+	.Video {
+		.poster .tagline {}
+	}
+}

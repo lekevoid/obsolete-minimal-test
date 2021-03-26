@@ -1,0 +1,47 @@
+@import "../base/dependencies";
+
+.Panel {
+	padding: 3rem;
+
+	/* COLOR */
+
+	$allColors: ("azure":$azure, "blue":$blue, "red":$red, "teal":$teal, "cyan":$cyan, "midnightBlue":$midnightBlue, "whisper":$whisper, "mint":$mint, "spring":$spring);
+	@each $name, $color in $allColors {
+		&.#{$name} {
+			background-color: $color;
+		}
+	}
+
+	/* END OF COLOR */
+
+	&.error {
+		background-color: lighten($red, 40%);
+		border: 2px solid $red;
+		color: $red;
+
+		p {
+			color: $red;
+		}
+	}
+
+	&.success {
+		background-color: $feta;
+		color: $green;
+
+		p {
+			color: $green;
+		}
+	}
+
+	&>*:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: $tablet_max_width) {}
+
+@media screen and (max-width: $mobile_max_width) {
+	.Panel {
+		padding: 3rem 4rem;
+	}
+}

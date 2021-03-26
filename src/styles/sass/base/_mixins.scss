@@ -1,0 +1,122 @@
+@mixin fontLighter {
+	font-family: "Roboto Light", "Roboto Regular", "Roboto", "Arial", sans-serif;
+	font-weight: 300;
+}
+
+@mixin fontLight {
+	font-family: "Roboto", "Arial Narrow", "Arial", "Helvetica", sans-serif;
+	font-weight: 400;
+}
+
+@mixin fontReg {
+	font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+	font-weight: 500;
+}
+
+@mixin fontMed {
+	font-family: "Roboto Medium", "Arial", "Helvetica", sans-serif;
+	font-weight: 500;
+}
+
+@mixin fontBold {
+	font-family: "Roboto Bold", "Roboto", "Arial", "Helvetica", sans-serif;
+	font-weight: 700;
+}
+
+@mixin fontBolder {
+	font-family: "Roboto Black", "Roboto", "Arial Black", "Arial", "Helvetica", sans-serif;
+	font-weight: 900;
+}
+
+@mixin fontSuperBold {
+	font-family: "Roboto Black", "Roboto", "Arial Black", "Arial", "Helvetica", sans-serif;
+	font-variant: small-caps;
+	font-weight: 900;
+	line-height: 80%;
+	text-transform: lowercase;
+}
+
+@mixin fontAltLighter {
+	font-family: "Merriweather Light", "Merriweather", "times", serif;
+	font-weight: 300;
+}
+
+@mixin fontAlt {
+	font-family: "Merriweather", "times", serif;
+	font-weight: 400;
+}
+
+@mixin fontAltBold {
+	font-family: "Merriweather Bold", "Merriweather", "times", serif;
+	font-weight: 700;
+}
+
+@mixin fontAltBolder {
+	font-family: "Merriweather Black", "Merriweather", "times", serif;
+	font-weight: 900;
+}
+
+@mixin flexCenter {
+	align-items: center;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+@mixin bgCover {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@mixin bg {
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+@mixin blogGradient {
+	background-image: linear-gradient(to bottom, rgba(25, 205, 255, 0.5) 10%, rgba(30, 27, 178, 0.5) 40%, rgba(255, 25, 25, 0.5) 100%);
+}
+
+@mixin fadeInOnce($duration) {
+	animation: $duration ease-out 0s 1 normal forwards running fadeInNoBlur;
+}
+
+@mixin textGradient($doradeion, $color1, $color2) {
+	background: linear-gradient(#{$doradeion}, $color1, $color2);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin fontGradient($doradeion, $color1, $color2) {
+	@include textGradient($doradeion, $color1, $color2);
+}
+
+@mixin inputWebkitAutofills($bgColor:#FFF, $textColor:$blue) {
+
+	input,
+	textarea,
+	select {
+
+		&:-webkit-autofill,
+		&:-webkit-autofill:hover,
+		&:-webkit-autofill:focus {
+			box-shadow: inset 0 0 200px $bgColor, inset 0 0 200px $bgColor, inset 0 0 200px $bgColor;
+			color: $textColor;
+			-webkit-text-fill-color: $textColor;
+		}
+
+		&.error:-webkit-autofill,
+		&.error:-webkit-autofill:hover,
+		&.error:-webkit-autofill:focus {
+			color: $red;
+			-webkit-text-fill-color: $red;
+		}
+	}
+}

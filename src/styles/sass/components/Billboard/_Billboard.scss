@@ -1,0 +1,602 @@
+.Billboard {
+	font-size: 1rem;
+	overflow: hidden;
+
+	.bg {
+		pointer-events: none;
+	}
+
+	.CTA {
+		display: inline-flex;
+	}
+
+	h3 {
+		pointer-events: none;
+	}
+
+	.img {
+		background-size: contain;
+	}
+
+	&#big_voice_award {
+		background: linear-gradient(to bottom, #004FFF 2.8%, #00DBA7 97%);
+		padding-bottom: 6em;
+		padding-top: 6em;
+
+		.inner {
+			align-items: center;
+			display: grid;
+			grid-template-columns: 55fr 45fr;
+			grid-column-gap: 2rem;
+			max-width: 920px;
+			padding: 0 $tankPadding;
+		}
+
+		.img {
+			background: transparent url("../../../assets/images/resources/img.svg") center center no-repeat;
+			background-size: contain;
+			height: 28em;
+			width: 100%;
+		}
+
+		.text {
+			width: 100%;
+		}
+
+		h3 {
+			color: #00F;
+			font-size: 3.8em;
+			line-height: 125%;
+			text-transform: none;
+		}
+
+		.CTA {
+			font-size: 1.6em;
+			font-weight: normal;
+			margin-top: 2em;
+			max-height: none;
+			padding: 1.1em 2em 1em;
+			text-transform: none;
+		}
+	}
+
+	&#ebook_adding_digital_to_your_foo_nnnnnnn {
+		align-items: center;
+		background: $blue url("../../../assets/images/resources/img.jpg") left center no-repeat;
+		background-size: cover;
+		display: flex;
+		height: 48em;
+
+		.inner {
+			padding-left: 55em;
+		}
+
+		h3 {
+			@include fontBold;
+			color: #00F;
+			font-size: 5.2em;
+			line-height: 110%;
+			margin-bottom: 0.6em;
+			max-width: 13em;
+			text-transform: uppercase;
+		}
+	}
+
+	&#ebook_carthelm_add_real_world_kick {
+		margin: 6em 0;
+
+		.inner {
+			align-items: flex-start;
+			background: $carthelmBlue url("../../../assets/images/resources/img.png") left center no-repeat;
+			background-size: contain;
+			border-radius: 4rem;
+			display: flex;
+			flex-flow: column nowrap;
+			font-family: "SofiaProBold";
+			height: 32em;
+			justify-content: center;
+			padding-left: 35%;
+		}
+
+		.logo {
+			background: transparent url("../../../assets/images/company/img.png") center center no-repeat;
+			background-size: contain;
+			bottom: 3em;
+			height: 6em;
+			position: absolute;
+			right: 3em;
+			width: 18em;
+		}
+
+		h3 {
+			color: #00F;
+			font-family: "SofiaProBold";
+			font-size: 2.6em;
+			font-variant: normal;
+			font-weight: 400;
+			line-height: 140%;
+			margin-bottom: 1.4em;
+			max-width: 18em;
+			text-align: left;
+			text-transform: none;
+			width: 80%;
+
+			em {
+				color: #00F;
+			}
+		}
+
+		.CTA {
+			display: flex;
+			zoom: 0.9;
+		}
+	}
+
+	&#programmatic_u_certified {
+		align-items: center;
+		background: radial-gradient(70.99% 1512.09% at 30.32% 26.37%, #7bf2f7 0%, #7855ba 100%);
+		border-radius: 1rem;
+		display: flex;
+		margin: 2rem auto 8rem auto;
+		max-width: 1200px;
+		min-height: 20em;
+
+		.inner {
+			display: flex;
+			justify-content: flex-end;
+			padding-left: $tankPadding;
+			padding-right: $tankPadding;
+
+			.tagline_container {
+				width: 40%;
+			}
+		}
+
+		.person {
+			background: transparent url("../../../assets/images/resources/img.png") center bottom no-repeat;
+			background-size: contain;
+			height: 100%;
+			left: 30%;
+			position: absolute;
+			transform: translateX(-50%);
+			width: 70em;
+		}
+
+
+		h3 {
+			@include fontReg;
+			color: #00F;
+			font-size: 2.8em;
+			font-variant: normal;
+			margin-bottom: 0.8em;
+			text-transform: none;
+		}
+
+		&:hover {
+			.CTA {
+				background-color: #FFF;
+				color: $red;
+			}
+		}
+	}
+
+	&#programmatic_u {
+		align-items: center;
+		background: radial-gradient(circle at 60% -40%, #DDFFFF 0%, #71E2EF 40%, #6C73C3 80%, #7855BA 100%);
+		display: flex;
+		margin-bottom: 9rem;
+		margin-top: 9rem;
+		min-height: 30em;
+
+		.inner {
+			padding-left: $tankPadding;
+			padding-right: $tankPadding;
+		}
+
+		.person {
+			background: transparent url("../../../assets/images/resources/img.png") center bottom no-repeat;
+			background-size: contain;
+			height: 100%;
+			left: 55%;
+			position: absolute;
+			transform: translateX(-50%);
+			width: 32em;
+		}
+
+		.badge {
+			background: transparent url("../../../assets/images/company/img.png") center center no-repeat;
+			background-size: contain;
+			height: 100%;
+			position: absolute;
+			right: 15%;
+			width: 18em;
+		}
+
+		h3 {
+			@include fontReg;
+			color: #00F;
+			font-size: 2.6em;
+			font-variant: normal;
+			margin-bottom: 1.2em;
+			max-width: 13em;
+			text-transform: none;
+			width: 45%;
+		}
+
+		&:hover {
+			.CTA {
+				background-color: #FFF;
+				color: $red;
+			}
+		}
+	}
+
+	&#ebook_optimize_foo_sales {
+		background: linear-gradient(to right, $blue 10%, $teal 90%);
+		display: grid;
+		height: 70em;
+		max-height: 50vw;
+		overflow: hidden;
+		place-items: center;
+		position: relative;
+		width: 100%;
+
+		&:before {
+			background: linear-gradient(104.98deg, #FFB077 6.46%, #F5532F 18.88%, #0505A9 50.46%, #0539C0 57.4%, #0585E2 67.44%, #05B6F7 75.15%, #05C8FF 79.01%);
+			border-radius: 100rem;
+			content: "";
+			display: inline-block;
+			filter: blur(40px);
+			height: 150%;
+			left: 0%;
+			pointer-events: none;
+			position: absolute;
+			top: -5%;
+			width: 94%;
+			z-index: 1;
+		}
+
+		&:after {
+			background: linear-gradient(0deg, #FF0000 3.3%, #0505A9 60.14%, #0539C0 69.11%, #0585E2 82.08%, #05B6F7 92.05%, #05C8FF 97.03%);
+			border-radius: 100rem;
+			content: "";
+			display: inline-block;
+			filter: blur(40px);
+			height: 150%;
+			left: 40%;
+			pointer-events: none;
+			position: absolute;
+			top: -25%;
+			width: 94%;
+			z-index: 2;
+		}
+
+		.inner {
+			align-items: flex-start;
+			display: flex;
+			flex-flow: column nowrap;
+			height: 100%;
+			justify-content: center;
+			z-index: 10;
+
+			&:after {
+				background: transparent url("../../../assets/images/resources/img.png") center center no-repeat;
+				background-size: contain;
+				content: "";
+				display: block;
+				height: 100%;
+				max-width: 50vw;
+				pointer-events: none;
+				position: absolute;
+				right: -12%;
+				top: 0;
+				width: 60%;
+			}
+		}
+
+		h3 {
+			@include fontBold;
+			color: #00F;
+			font-size: 5.2em;
+			margin-bottom: 2rem;
+			max-width: 50%;
+			text-transform: none;
+			width: 10em;
+		}
+
+		.tagline {
+			@include fontLight;
+			color: #00F;
+			font-size: 3.4em;
+			margin-bottom: 6rem;
+			max-width: 60em;
+			width: 60%;
+		}
+
+		.CTA {
+			@include fontLight;
+			font-size: 2.6em;
+			padding: 2.6rem 9rem;
+			text-transform: none;
+		}
+	}
+
+	&#ebook_successful_nnnnnnn {
+		background-image: linear-gradient(to right top, #3F1BAD, #3919AF, #3216B1, #2914B4, #1E12B6);
+		height: 48em;
+		position: relative;
+
+		.triangle {
+			border-bottom: 3em solid transparent;
+			border-left: 56em solid transparent;
+			border-right: 7em solid #3f1bad;
+			border-top: 23em solid #3f1bad;
+			height: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 0;
+			z-index: 0;
+		}
+
+		.inner {
+			display: flex;
+			flex-flow: row;
+			height: 100%;
+			max-height: 100%;
+
+		}
+
+		.text {
+			display: flex;
+			flex-flow: column;
+			height: 100%;
+			justify-content: center;
+			max-width: 50%;
+			z-index: 10;
+
+		}
+
+		h3 {
+			color: white;
+			cursor: default;
+			font-family: "Merriweather", sans-serif;
+			font-size: 4.4em;
+			font-weight: bold;
+			line-height: 130%;
+			margin-bottom: 1.3em;
+			margin-top: 0;
+			max-width: 13.4em;
+			text-transform: none;
+			user-select: none;
+		}
+
+		span {
+			@include fontSuperBold;
+			font-size: 3.6em;
+			text-transform: uppercase;
+		}
+
+		a {
+			@include fontSuperBold;
+			font-size: 4em;
+		}
+
+		.ebook {
+			background: transparent url("../../../assets/images/resources/img.png") center center no-repeat;
+			background-size: contain;
+			height: 120%;
+			position: absolute;
+			right: -10%;
+			top: 8%;
+			width: 60%;
+		}
+	}
+
+	&#soc2 {
+		background: #FFF url("../../../assets/images/verticals/img.jpg") left center no-repeat;
+		background-size: cover;
+		height: 46em;
+		position: relative;
+		z-index: 1;
+
+		.inner {
+			align-items: center;
+			display: flex;
+			flex-flow: row nowrap;
+			height: 100%;
+			justify-content: space-between;
+			padding-bottom: 0;
+			z-index: 10;
+		}
+
+		.badge {
+			background: transparent url("../../../assets/images/icons/img.png") center center no-repeat;
+			background-size: contain;
+			flex: 0 0 50%;
+			height: 20em;
+			max-height: 100%;
+			max-width: 50%;
+		}
+
+		.text_wrap {
+			align-items: center;
+			display: flex;
+			height: 100%;
+			z-index: 10;
+
+		}
+
+		.text {
+			width: 100%;
+		}
+
+		h3 {
+			color: #00F;
+			font-family: "Roboto Black", sans-serif;
+			font-size: 3em;
+			font-variant: small-caps;
+			margin: 0;
+			text-shadow: -1px -1px 2px #FFF, -1px 1px 2px #FFF, 1px -1px 2px #FFF, 1px 1px 2px #FFF, 0 0 12px #FFF;
+		}
+
+		p {
+			color: #00F;
+			font-size: 2.4em;
+			margin: 0.4em 0 1.3em;
+			text-shadow: -1px -1px 2px #FFF, -1px 1px 2px #FFF, 1px -1px 2px #FFF, 1px 1px 2px #FFF, 0 0 12px #FFF;
+		}
+	}
+
+	&#ebook_5_mistakes {
+		background: #F9F9F9 url("../../../assets/images/resources/img.jpg") center center no-repeat;
+		background-size: cover;
+		height: 48em;
+		position: relative;
+
+		.inner {
+			align-items: flex-start;
+			display: flex;
+			flex-flow: column nowrap;
+			height: 100%;
+			justify-content: center;
+		}
+
+		h3 {
+			@include fontAltBold;
+			color: $blue;
+			font-size: 4.4em;
+			line-height: 130%;
+			margin: 0 0 0.7em;
+			max-width: 13.6em;
+			text-transform: none;
+		}
+
+		a {
+			@include fontSuperBold;
+			font-size: 3.6em;
+			line-height: 100%;
+			max-width: 16.6em;
+			text-transform: uppercase;
+		}
+	}
+
+	&#ebook_modernize_foo_business {
+		background: #FFF url("../../../assets/images/resources/img.jpg") center center no-repeat;
+		/* MOBILE : background: #FFF url("../../../assets/images/resources/img.jpg") center center no-repeat; */
+		background-size: cover;
+
+		h3 {
+			@include fontBolder;
+			color: #00F;
+			font-size: 5em;
+		}
+
+		.inner {
+			align-items: flex-start;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+			max-width: 1400px;
+			padding-bottom: 12em;
+			padding-left: 44%;
+			padding-top: 18em;
+		}
+
+		h3 {
+			@include fontBolder;
+			color: #00F;
+			font-size: 5em;
+			line-height: 120%;
+			margin-bottom: 0.6em;
+			max-width: 14em;
+		}
+
+		.CTA {
+			background-color: #FFF;
+			border-color: #00F;
+			box-shadow: 4px 4px 8px rgba(#000, 0.6);
+			font-size: 2.6em;
+			padding: 1.3em 1.6em;
+
+			&:hover {
+				background-color: #FFF;
+				color: #00F;
+			}
+		}
+	}
+}
+
+.Tank>.Billboard {
+	border-radius: 4rem;
+	box-shadow: 4px 4px 12px rgba($blue, 0.2);
+
+	&#ebook_adding_digital_to_your_foo_nnnnnnn {
+		height: 40em;
+
+		.inner {
+			padding-right: 6em;
+		}
+
+		h3 {
+			font-size: 4.8em;
+		}
+	}
+
+	&#ebook_carthelm_add_real_world_kick {
+		.inner {
+			padding-left: 40%;
+		}
+	}
+
+	&#programmatic_u {
+		.badge {
+			right: 4em;
+		}
+	}
+
+	&#ebook_successful_nnnnnnn {
+		.text {
+			padding-left: 9em;
+		}
+	}
+
+	&#soc2 {
+		.badge {
+			flex-basis: 40%;
+			max-width: 40%;
+		}
+
+		.text {
+			padding-right: 6em;
+		}
+	}
+
+	&#ebook_5_mistakes {
+		.inner {
+			padding-left: 9em;
+		}
+
+		h3 {
+			max-width: 11em;
+		}
+	}
+
+	&#ebook_modernize_foo_business {
+		font-size: 0.9em;
+
+		.inner {
+			padding-right: 6em;
+		}
+	}
+
+	&#big_voice_award {
+		background: linear-gradient(to bottom, #004FFF 2.8%, #00DBA7 97%);
+		box-shadow: 4px 4px 16px rgba($carthelmBlue, 0.3);
+
+		.inner {
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+@media screen and (max-width: $mobile_max_width) and (orientation:portrait) {
+	.Row {
+		@for $i from 1 through 12 {
+
+			&.cols-#{$i}>div,
+			&.cols-#{$i}>aside {
+				$width: (100%/$i);
+				$gutter: (1.2*($i - 1)/$i)+"rem";
+				flex: 0 0 calc(#{$width} - #{$gutter});
+				max-width: calc(#{$width} - #{$gutter});
+			}
+		}
+	}
+}

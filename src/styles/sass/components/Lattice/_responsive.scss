@@ -1,0 +1,13 @@
+@media screen and (max-width: 599px) and (orientation: portrait),
+screen and (max-width: $xs_max_width) {
+	.Lattice {
+		grid-template-columns: 1fr;
+		row-gap: 3rem;
+	}
+}
+
+@media screen and (max-width: $xs_max_width) and (orientation: portrait) {
+	.Lattice {
+		.Pane {}
+	}
+}

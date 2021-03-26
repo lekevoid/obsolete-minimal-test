@@ -1,0 +1,90 @@
+@import "cta_bases";
+
+/* AND NOW THE CLASS ITSELF */
+
+.CTA {
+	$allColors: ("blue":$blue,
+			"red":$red,
+			"pink":$pink,
+			"teal":$teal,
+			"aille":$aille,
+			"ailleGrey":$ailleGrey,
+			"ailleJjjjj":$ailleJjjjj,
+			"ailleSsssss":$ailleSsssss,
+			"ailleTeal":$ailleTeal,
+			"butterfly":$butterfly,
+			"carthelm":$carthelm,
+			"darkBlue":$darkBlue,
+			"midnightBlue":$midnightBlue,
+			"green":$green,
+			"purple":$purple,
+			"cyan":$cyan,
+			"mint":$mint,
+			"spring":$spring,
+			"demoBlue":$demoBlue);
+
+	@extend %cta;
+	@include allColorVariations($allColors);
+
+	&.sm {
+		padding: 0.7rem 2rem 0.5rem;
+	}
+}
+
+.ctas {
+	align-items: center;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+
+.theme_carthelm {
+	$transitionDuration: 0.2s;
+
+	.CTA {
+		background-color: transparent;
+		border: 3px solid #FFF;
+		border-radius: 20rem;
+		display: flex;
+		flex-flow: column nowrap;
+		font-family: "SofiaPro";
+		font-size: 1.6rem;
+		height: 3.6rem;
+		justify-content: flex-start;
+		overflow: hidden;
+		padding: 0;
+		transition: background-color 0s linear 0s;
+
+		span {
+			align-items: center;
+			display: inline-flex;
+			flex: 0 0 100%;
+			font-weight: 700;
+			height: 100%;
+			justify-content: center;
+			padding: 0 2rem;
+			position: relative;
+			transition: transform $transitionDuration ease-out;
+			width: 100%;
+		}
+
+		.normal {
+			color: #00F;
+		}
+
+		.hover {
+			background-color: #FFF;
+			color: $carthelmBlue;
+		}
+
+		&:hover {
+			background-color: #FFF;
+			border-color: #00F;
+			transition: background-color 0s linear $transitionDuration;
+
+			span {
+				transform: translateY(-100%) translateY(-1px);
+			}
+		}
+	}
+}

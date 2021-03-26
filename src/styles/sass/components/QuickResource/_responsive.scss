@@ -1,0 +1,40 @@
+@media screen and (max-width: $tank_max_width) {}
+
+@media screen and (max-width: $tablet_max_width) {}
+
+@media screen and (max-width: $mobile_max_width) {}
+
+@media screen and (max-width: $xs_max_width) {
+
+	.QuickResource,
+	.Row .QuickResource {
+		flex-basis: 100%;
+		width: 100%;
+	}
+
+	.QuickResource {
+		.ImgHat img {
+			object-fit: cover;
+			width: 100%;
+		}
+
+		.caption {
+			font-size: 2rem;
+		}
+	}
+}
+
+@media screen and (max-width: $xs_max_width) and (orientation:portrait) {
+
+	.QuickResource,
+	.Row .QuickResource {
+		flex-basis: 100%;
+		width: 100%;
+	}
+
+	.QuickResource {
+		.ImgHat img {
+			object-fit: cover;
+		}
+	}
+}

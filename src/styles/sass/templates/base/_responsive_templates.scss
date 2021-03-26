@@ -1,0 +1,31 @@
+@media screen and (max-width: $tank_max_width) {
+	.template_base {}
+}
+
+@media screen and (max-width: $tank_max_width) and (orientation:portrait) {
+	.template_base {}
+}
+
+@media screen and (max-width: $tablet_max_width) {
+	.template_base {}
+}
+
+@media screen and (max-width: $tablet_max_width) and (orientation:portrait) {
+	.template_base {}
+}
+
+@media screen and (max-width: $mobile_max_width) {
+	.template_base {}
+}
+
+@media screen and (max-width: $mobile_max_width) and (orientation:portrait) {
+	.template_base {}
+}
+
+@media screen and (max-width: $xs_max_width) {
+	.template_base {}
+}
+
+@media screen and (max-width: $xs_max_width) and (orientation:portrait) {
+	.template_base {}
+}

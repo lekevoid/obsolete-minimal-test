@@ -1,0 +1,129 @@
+@media screen and (max-width: $tablet_max_width) {
+	.PromoBox {
+		font-size: 0.9rem;
+
+		&#programmatic_u .wrap {
+			padding-top: 5em;
+		}
+
+		&#ebook_hood_playbook .tagline,
+		&#ebook_playbook_programmatic_buyers .tagline {
+			margin-top: 0;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet_max_width) and (orientation:portrait) {
+	.PromoBox {
+		font-size: 0.8rem;
+
+		.wrap {
+			padding-left: 3em;
+			padding-right: 3em;
+		}
+
+		.img+.tagline,
+		.img+.CTA {
+			margin-top: 1em;
+		}
+
+		&#ebook_carthelm_add_real_world_kick .tagline {
+			font-size: 3em;
+		}
+
+		&#programmatic_u .tagline {
+			font-size: 3em;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile_max_width) {
+	.PromoBox {
+		.theme_carthelm .CTA {
+			flex: 1 1 auto;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile_max_width) and (orientation:portrait),
+screen and (max-width: $xs_max_width) {
+	.Row.cols-2>.PromoBox {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+
+	.PromoBox {
+		font-size: 1.2rem;
+		height: 50rem;
+		margin-bottom: 3rem;
+		margin-top: 3rem;
+
+		.CTA {
+			flex: 1 1 auto;
+			font-size: 2.4rem;
+			line-height: 120%;
+			max-height: 6.6rem;
+			min-height: 6rem;
+			padding: 1.4rem 2.6rem 1.2rem;
+		}
+
+		.theme_carthelm .CTA {
+			padding: 0;
+		}
+
+		&#programmatic_u .wrap {
+			padding-top: 3em;
+		}
+	}
+}
+
+@media screen and (max-width: $xs_max_width) and (orientation:portrait) {
+	.Tank.promotion {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.PromoBox {
+		border-radius: 0;
+		margin: 0;
+
+		&#ebook_carthelm_add_real_world_kick,
+		&#ebook_modernize_foo_business,
+		&#ebook_optimize_foo_sales,
+		&#ebook_successful_nnnnnnn,
+		&#programmatic_u {
+			flex-basis:calc(100% + #{$tankPaddingXS * 2});
+			margin:0 -#{$tankPaddingXS};
+			max-width:calc(100% + #{$tankPaddingXS * 2});
+			width:calc(100% + #{$tankPaddingXS * 2});
+		}
+
+		&#ebook_carthelm_add_real_world_kick {
+
+			.tagline {
+				font-size: 2.6em;
+				padding: 0;
+			}
+		}
+
+		&#ebook_hood_playbook .tagline,
+		&#ebook_playbook_programmatic_buyers .tagline {
+			margin-top: 0;
+		}
+
+		&#ebook_interactive_content .tagline {
+			margin-top: 0;
+		}
+
+		&#programmatic_u .tagline {
+			font-size: 2.6em;
+		}
+	}
+}
+
+/* Just to compensate for the scroll bar */
+@media screen and (max-width: $xs_max_width) and (orientation:portrait) and (hover:hover) and (pointer:fine) {
+	.PromoBox#programmatic_u {
+		padding-right: 17px;
+	}
+}

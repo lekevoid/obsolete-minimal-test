@@ -1,0 +1,73 @@
+/*
+THIS FILE IS SPECIAL. THIS IS TO BE THE BASICS FOR ALL THE BLOGS, CUSTOMER SPOTLIGHTS AND OTHERS.
+WE ARE SEPARATING IT THIS WAY SO WE CAN REUSE THOSE STYLINGS IN THE CMS AS WELL.
+*/
+
+@mixin blogH1 {
+	@include fontSuperBold;
+	color: $darkBlue;
+	display: block;
+	font-size: 6.2rem;
+	line-height: 90%;
+	margin: 0 0 2rem;
+}
+
+@mixin blogH2 {
+	@include fontSuperBold;
+	color: $koamaru;
+	display: block;
+	font-size: 3.8rem;
+	line-height: 100%;
+	margin: 0 0 3rem;
+}
+
+@mixin blogH3 {
+	@include fontSuperBold;
+	color: $koamaru;
+	display: block;
+	font-size: 3rem;
+	line-height: 100%;
+	margin: 0 0 3rem;
+}
+
+@mixin blogH4 {
+	@include fontBolder;
+	color: $koamaru;
+	display: block;
+	font-size: 2.4rem;
+	margin: 0 0 2rem;
+	text-transform: uppercase;
+}
+
+@mixin blogH5 {}
+
+@mixin blogH6 {}
+
+@mixin blogP {
+	@include fontReg;
+	color: $darkBlue;
+	font-size: 1.8rem;
+	line-height: 140%;
+	margin: 0 0 2rem;
+	max-width: 100%;
+	padding: 0;
+}
+
+@mixin blogBillboards {
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+	margin: 3rem auto;
+	max-height: 30rem;
+
+	.Tank {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	&#ebook_adding_digital_to_your_foo_nnnnnnn {
+		h3 {
+			font-size: 3.2rem;
+		}
+	}
+}

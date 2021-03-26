@@ -1,0 +1,92 @@
+@media screen and (max-width: 1480px) {
+	.Tank.base_1400 {
+		padding: 0 $tankPadding;
+
+		.Tank {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+@media screen and (max-width: $tank_max_width) {
+	.Tank {
+		padding: 0 $tankPadding;
+
+		.Tank {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		&.base_900 {
+			padding: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	.Tank.base_1100 {
+		padding: 0 $tankPadding;
+
+		.Tank {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.Tank.base_1000 {
+		padding: 0 $tankPadding;
+
+		.Tank {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.Tank.base_900 {
+		padding: 0 $tankPadding;
+
+		.Tank {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile_max_width) {
+	.Tank {
+
+		&,
+		&.base_1400,
+		&.base_1000,
+		&.base_900 {
+			margin-left: 0;
+			margin-right: 0;
+			padding: 0 $tankPaddingPhone;
+			width: 100%;
+
+			.Tank {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.Tank {
+
+		&,
+		&.base_1400,
+		&.base_1100,
+		&.base_1000,
+		&.base_900 {
+			padding-left: $tankPaddingXS;
+			padding-right: $tankPaddingXS;
+		}
+	}
+}

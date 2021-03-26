@@ -1,0 +1,44 @@
+@media screen and (max-width: $tablet_max_width) {
+	.LogosList {
+		.logos {
+			grid-auto-rows: 6rem;
+		}
+
+		.logo {
+			&.shape_regular {
+				max-height: 4rem;
+			}
+
+			&.shape_square {
+				max-height: 5rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile_max_width) and (orientation:portrait),
+screen and (max-width: $xs_max_width) {
+	.LogosList {
+		.logos {
+			grid-auto-rows: 7rem;
+			grid-template-columns: 1fr 1fr 1fr;
+
+			&.cols_3,
+			&.cols_4,
+			&.cols_5,
+			&.cols_6 {
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+		}
+
+		.logo {
+			&.shape_regular {
+				max-height: 4.6rem;
+			}
+
+			&.shape_square {
+				max-height: 7rem;
+			}
+		}
+	}
+}

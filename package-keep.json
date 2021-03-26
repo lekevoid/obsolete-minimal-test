@@ -1,0 +1,76 @@
+{
+	"author": "Kevin Gagnon, Valentin Lachere, Michel Maroun, Charbel Chahine",
+	"email": "kevin.gagnon@broadsign.com, valentin.lachere@broadsign.com, michoma94@outlook.com, chahine.charbel@me.com",
+	"license": "MIT",
+	"name": "Broadsign",
+	"description": "Broadsign - Leading digital signage solutions provider",
+	"version": "1.1.0",
+	"dependencies": {
+		"@svgr/webpack": "^5.1.0",
+		"cross-env": "^7.0.2",
+		"gatsby": "^2.32.9",
+		"gatsby-image": "^2.10.0",
+		"gatsby-plugin-alias-imports": "^1.0.5",
+		"gatsby-plugin-catch-links": "^2.1.15",
+		"gatsby-plugin-feed": "^2.3.27",
+		"gatsby-plugin-google-tagmanager": "^2.3.16",
+		"gatsby-plugin-manifest": "^2.11.0",
+		"gatsby-plugin-meta-redirect": "^1.1.1",
+		"gatsby-plugin-offline": "^3.9.0",
+		"gatsby-plugin-react-helmet": "^3.1.13",
+		"gatsby-plugin-remove-serviceworker": "^1.0.0",
+		"gatsby-plugin-sharp": "^2.13.1",
+		"gatsby-plugin-sitemap": "^2.2.19",
+		"gatsby-plugin-split-css": "^1.0.2",
+		"gatsby-plugin-svgr": "^2.1.0",
+		"gatsby-remark-images": "^3.10.0",
+		"gatsby-source-apiserver": "^2.1.3",
+		"gatsby-source-filesystem": "^2.11.0",
+		"gatsby-source-wordpress": "^5.0.0",
+		"gatsby-source-youtube-v2": "^1.0.1",
+		"gatsby-transformer-remark": "^2.6.32",
+		"gatsby-transformer-sharp": "^2.11.0",
+		"graphql": "^15.4.0",
+		"i18n-react": "^0.7.0",
+		"node-fetch": "^2.6.1",
+		"prop-types": "^15.7.2",
+		"react": "^17.0.1",
+		"react-cookies": "^0.1.1",
+		"react-countup": "^4.2.3",
+		"react-dom": "^17.0.1",
+		"react-helmet": "^6.1.0",
+		"react-hubspot-form": "^1.3.7",
+		"react-lazyload": "2.6.9",
+		"react-responsive-carousel": "^3.1.51",
+		"react-scroll": "^1.7.14",
+		"react-share": "^4.2.0",
+		"react-sticky": "^6.0.3",
+		"react-swipeable": "^5.5.1",
+		"react-text-loop": "^2.3.0",
+		"react-typeform-embed": "^0.2.1",
+		"request": "^2.88.2"
+	},
+	"devDependencies": {
+		"gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.10",
+		"prettier": "^2.1.2",
+		"react-devtools": "^4.10.1"
+	},
+	"keywords": [
+		"gatsby"
+	],
+	"scripts": {
+		"serve": "gatsby serve",
+		"build": "gatsby build",
+		"develop": "gatsby develop",
+		"format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+		"start": "npm run develop",
+		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/broadsignmarketing/broadsign_website.git"
+	},
+	"bugs": {
+		"url": "https://github.com/gatsbyjs/gatsby/issues"
+	}
+}

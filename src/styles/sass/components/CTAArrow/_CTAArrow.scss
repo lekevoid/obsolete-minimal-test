@@ -1,0 +1,43 @@
+.CTAArrow {
+	align-items: center;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	position: relative;
+	transition: width 0.3s;
+	width: 100%;
+
+	.shaft {
+		align-items: flex-start;
+		background-color: $azure;
+		display: flex;
+		flex: 0 0 82%;
+		flex-flow: column nowrap;
+		margin: 5rem 0;
+		padding: 3rem 20% 3rem 6rem;
+		width: 82%;
+
+		&>p {
+			color: $blue;
+			font-size: 2.2rem;
+			margin-bottom: 2rem;
+		}
+
+		&>a.cta {}
+	}
+
+	.head {
+		display: flex;
+		flex: 0 0 18%;
+		height: 100%;
+		position: relative;
+		position: absolute;
+		right: 0;
+		width: 18%;
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+}

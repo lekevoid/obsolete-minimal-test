@@ -1,0 +1,109 @@
+/* BREAKPOINTS */
+
+/* Standard Tank Paddings */
+$tankPadding:40px;
+$tankPaddingPhone:40px;
+$tankPaddingXS:20px;
+
+/* Standard Breakpoints */
+$tablet_max_width:1024px;
+$mobile_max_width:767px;
+
+/* Exceptions/Precision */
+$desktop_1080p_width:1920px;
+$xl_max_width:1600px;
+$tank_max_width:(1200px + ($tankPadding * 2));
+$lg_max_width:1024px;
+$xs_max_width:575px;
+$super_xs_max_width:375px;
+
+/* COLORS */
+
+/* Blue */
+$blue: #11F;
+$darkBlue:#00F;
+$midnightBlue: #00F;
+$footer: #00F;
+$navBlue: #00F;
+$subNavBlue: #00F;
+$demoBlue: #00F;
+$doradeBlue:#00F;
+$demoTeal: #00F;
+
+/* Teal / Highlight Blue */
+$teal: #0FF;
+$cyan: #0FF;
+$mint: #0FF;
+$pacific: #0FF;
+$blizzard: #0FF;
+$azure: #0FF;
+$seagull:#0FF;
+$lightazure:#0FF;
+$freeze: #0FF;
+$lightfreeze: #0FF;
+$breeze: #0FF;
+
+/* Red */
+$red: #F00;
+$pink: #F00;
+
+/* Grey */
+$grey: #444;
+$lightGrey: #DDD;
+$whisper: #DDD;
+$darkGrey: #444;
+$smoke: #DDD;
+$flour: #DDD;
+$textColor:#000;
+
+
+/* Greens */
+$green:#0F0;
+$spring: #0F0;
+$feta: #0F0;
+$butterfly: #0F0;
+$kombu: #0F0;
+
+/* DDD Pages */
+$dddBlue:$blue;
+$dddGreen:#0F0;
+$dddOrange:#F80;
+$dddPurple:#F0F;
+$dddBlueShadow:$dddBlue;
+$dddGreenShadow:darken($dddGreen, 10);
+$dddOrangeShadow:darken($dddOrange, 15);
+$dddPurpleShadow:$dddPurple;
+
+/* Aille */
+$ailleOrange:#F80;
+$aille:$ailleOrange;
+$orange:$ailleOrange;
+$ailleGrey:#333;
+$ailleJjjjj:#F80;
+$ailleSsssss:#0FF;
+$ailleTeal:#0FF;
+
+/* Carthelm */
+$carthelmBlue:#00F;
+$carthelmTeal:#0FF;
+$carthelm:$carthelmTeal;
+
+/* Others */
+$cyanondark: #8FF;
+$dodger:#0FF;
+$worker: #0FF;
+$koamaru: #00F;
+$purple: #F0F;
+$deepsea: #00F;
+$transdark: rgba(0, 0, 0, 0.5);
+
+/* Utility Colors */
+$titleTeal:$mint;
+
+/* For Hero Headers */
+$dim:#8FF;
+
+/* HEADER */
+$headerHeight: 70px;
+$headerHeightReduced: 40px;
+$headerReduceTransitionTime: 0.6s;
