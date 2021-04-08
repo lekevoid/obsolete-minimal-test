@@ -264,7 +264,11 @@ export const queryIndex = graphql `
 			...basicFluid
 		}
 
-		blogPosts: allWpPost(limit: 2, filter: {language: {slug: { regex: $langRegex }}, featuredImage: {node: {localFile: {url: {regex: "/\\\\w+/"}}}}}) {
+		blogPosts: allWpPost(
+			limit: 2
+			filter: {language: {slug: {regex: $langRegex}}, featuredImage: {node: {localFile: {childImageSharp: {fluid: {src: {ne: "null"}}}}}}}
+			sort: {fields: date, order: DESC}
+		) {
 			edges {
 				node {
 					id

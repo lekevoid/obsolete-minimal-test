@@ -24,7 +24,7 @@ module.exports = {
 		siteUrl: process.env.SITE_URL || "https://broadsign.com"
 	},
 	flags: {
-		// PRESERVE_WEBPACK_CACHE: true
+		PRESERVE_WEBPACK_CACHE: true
 	},
 	plugins: [{
 			resolve: "gatsby-plugin-react-helmet"
@@ -139,14 +139,13 @@ module.exports = {
 				// the only required plugin option for WordPress is the GraphQL url.
 				url: `${process.env.WP_URL}graphql`,
 				verbose: true,
-				// develop: {
-				// 	hardCacheMediaFiles: true,
-				// },
-				// html: {
-				// 	createStaticFiles: true,
-				// },
+				develop: {
+					// hardCacheMediaFiles: true,
+				},
+				html: {
+					createStaticFiles: true,
+				},
 				schema: {
-					perPage: 10,
 					timeout: 100000,
 					requestConcurrency: 5,
 					previewRequestConcurrency: 2,
@@ -154,7 +153,7 @@ module.exports = {
 				debug: {
 					timeBuildSteps: true,
 					graphql: {
-						// onlyReportCriticalErrors: false,
+						// onlyReportCriticalErrors: true,
 						showQueryVarsOnError: true,
 					},
 				},

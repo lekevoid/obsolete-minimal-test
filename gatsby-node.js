@@ -38,27 +38,11 @@ exports.onCreatePage = ({ page, actions }) => {
 		let jsPathToFindInRouter = (page.path === "/" ? "/index/" : page.path);
 		let route = Object.values(router).find(r => `/${r.js}/` === jsPathToFindInRouter);
 
-		/* function createCNRedirect(pathCN) {
-			let redirect = false;
-
-			if (pathCN === "cn") {
-				redirect = redirects.find(r => r.from === pathCN);
-			} else if (pathCN.includes("cn/")) {
-				redirect = redirects.find(r => r.from === pathCN);
-			}
-
-			if (redirect) {
-				createRedirect({ fromPath: redirect.from, toPath: redirect.to, isPermanent: true });
-			}
-		} */
-
 		if (route) {
 			Object.keys(i18n).map(lang => {
-				// if (lang === "cn" && route.cn && route.cn !== "") {
-				// 	createCNRedirect(`/${route.cn}`);
-				// } else
 				if (route[lang] && route[lang] !== "") {
 					const url = `/${route[lang]}`.replace(/\/\//g, "/");
+					console.log(url);
 
 					createPage({
 						...page,
@@ -204,13 +188,20 @@ async function getPosts({ graphql, reporter }) {
 exports.createSchemaCustomization = ({ actions }) => {
 	const { createTypes } = actions;
 
+
 	createTypes(`
+		interface WpTermNode implements Node
+
 		type SitePage implements Node @dontInfer {
 			path: String!
 		}
 	`)
+
+
 	/*
 	createTypes(`
+		interface WpTermNode implements Node
+
 		type WpNodePost implements Node {
 			nodes: [WpPost]
 		}
@@ -252,14 +243,30 @@ exports.createSchemaCustomization = ({ actions }) => {
 	})
 } */
 
-exports.onCreateWebpackConfig = ({ actions }) => {
+exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
+	console.log(stage);
+
 	actions.setWebpackConfig({
 		resolve: {
 			fallback: {
 				fs: false,
 			}
 		},
+		output: {
+			publicPath: "/",
+		},
 	})
+
+	if (stage === 'develop') {
+		const config = getConfig()
+		const miniCssExtractPlugin = config.plugins.find(
+			plugin => plugin.constructor.name === 'MiniCssExtractPlugin'
+		)
+		if (miniCssExtractPlugin) {
+			miniCssExtractPlugin.options.ignoreOrder = true
+		}
+		actions.replaceWebpackConfig(config)
+	}
 }
 
 exports.createSchemaCustomization = ({ actions }) => {
