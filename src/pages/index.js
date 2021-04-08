@@ -195,25 +195,6 @@ export default function IndexPage({pageContext: { lang }, location: { pathname }
 								</div>
 							</div>
 						</Link>
-						<Link to={T.translate("lipsum")} className="resource resource_ebook">
-							<div className="ImgFlank ebook_row">
-								<aside>
-									<div className="ebook">
-										<Img fluid={data.EBookCover.childImageSharp.fluid} alt="" className="page cover" />
-										<Img fluid={data.EBookPage1.childImageSharp.fluid} alt="" className="page page_2" />
-										<Img fluid={data.EBookPage2.childImageSharp.fluid} alt="" className="page page_1" />
-										<Img fluid={data.EBookPage3.childImageSharp.fluid} alt="" className="page page_3" />
-										<Img fluid={data.EBookPage4.childImageSharp.fluid} alt="" className="page page_4" />
-										<Img fluid={data.EBookPage5.childImageSharp.fluid} alt="" className="page back_cover" />
-									</div>
-								</aside>
-								<div className="lead">
-									<h3 className="font_size_2_4">{T.translate("lipsum")}</h3>
-									<p className="font_size_1_8">{T.translate("lipsum")}</p>
-									<CTA span gradient round clear>{T.translate("lipsum")}</CTA>
-								</div>
-							</div>
-						</Link>
 					</div>
 				</LazyLoad>
 			</Tank>
