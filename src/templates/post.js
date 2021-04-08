@@ -135,14 +135,6 @@ export default function BlogPost(props) {
 	}, [post]);
 
 
-	const hasDemoForm = useMemo(() => {
-		if (content.match(/\[demo_form\]/g)) {
-			return true;
-		}
-		return false;
-	}, [content]);
-
-
 	const seo = {
 		title: title,
 		description: seoDescription,
@@ -190,14 +182,6 @@ export default function BlogPost(props) {
 				</aside>
 				<div className={classnames("post_body", relatedPosts.length === 0 ? "no_related_posts" : "")}>
 					<div className="content" dangerouslySetInnerHTML={{ __html: content }} />
-					{hasDemoForm &&
-						<Panel color="whisper" className="Panel">
-							<h3>{T.translate("blog.demoFormTitle")}</h3>
-							<Form
-								fields="boxes" bg="light"
-								formId={T.translate("form.demo")} />
-						</Panel>
-					}
 				</div>
 				{relatedPosts.length > 0 &&
 					<aside className="related_posts">
