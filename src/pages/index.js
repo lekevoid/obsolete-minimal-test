@@ -24,23 +24,39 @@ export default function IndexPage({pageContext: { lang }, location: { pathname }
 	const [quotePosition, setQuotePosition] = useState(0);
 
 	T.setTexts(lang);
-	const l = T.translate("lipsum");
+	const l = useMemo(() => "en", []);
 
 	const seo = {
-		...T.texts.home.seo
+		title: "Minimal repro 4 U",
+		description: "Minimal repro 4 U",
 	}
 
-	let allQuotes = {};
-	let allQuotesQty = 0;
+	const allQuotes = useMemo(() => {
+		if (lang.home.quotes) {
+			return Object.values(lang.home.quotes);
+		}
+		return [];
+	}, [lang]);
 
-	allQuotes = Object.values(lang.home.quotes);
-	allQuotesQty = allQuotes.length;
+
+	const allQuotesQty = useMemo(() => {
+		return allQuotes.length;
+	}, [allQuotes]);
+
 
 	useEffect(() => {
 		if (quotePosition >= allQuotesQty) {
 			setQuotePosition(0);
 		}
 	}, [quotePosition, allQuotesQty]);
+
+	useEffect(() => {
+		console.log(l);
+
+		if (l === "cn") {
+			navigate("https://www.broadsign.cn/web/HomePage.aspx");
+		}
+	}, [l]);
 
 	const blogPosts = useMemo(() => {
 		try {
@@ -50,14 +66,7 @@ export default function IndexPage({pageContext: { lang }, location: { pathname }
 		}
 	}, [data]);
 
-	/* useEffect(() => {
-		fetch("/.netlify/functions/hs_contacts")
-		.then(res => console.log(res))
-		// .then(res => res.json())
-		// .then(data => console.log(data))
-	}, []); */
-
-	if (l === "cn") { return <Layout path={pathname} /> }
+	if (l === "cn") { return <Layout path={pathname} id="home"></Layout> }
 
 	return (
 		<Layout path={pathname} seo={seo} id="home">

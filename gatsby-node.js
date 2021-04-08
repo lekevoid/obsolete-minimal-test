@@ -128,7 +128,7 @@ async function getPosts({ graphql, reporter }) {
 	const graphqlResult = await graphql(`
 		query WpPosts {
 			# Query all WordPress blog posts sorted by date
-			allWpPost(filter: {status: {eq: "publish"}, featuredImage: {node: {localFile: {childImageSharp: {fluid: {src: {ne: null}}}}}}}, sort: {fields: [date], order: DESC}) {
+			allWpPost(limit: 10, filter: {status: {eq: "publish"}, featuredImage: {node: {localFile: {childImageSharp: {fluid: {src: {ne: null}}}}}}}, sort: {fields: [date], order: DESC}) {
 				edges {
 					post: node {
 						title
