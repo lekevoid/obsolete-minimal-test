@@ -7,21 +7,21 @@ require("dotenv").config({
 
 module.exports = {
 	siteMetadata: {
-		title: "Broadsign",
-		name: "Broadsign",
-		authors: "Kevin Gagnon, Valentin Lachere, Michel Maroun, Charbel Chahine",
-		description: "Cloud-based digital signage solutions",
+		title: "Minimal Repro",
+		name: "Minimal Repro",
+		authors: "Kevin Gagnon",
+		description: "Minimal Repro",
 		type: "Company",
-		url: process.env.SITE_URL || "https://broadsign.com",
+		url: process.env.SITE_URL || "https://lekevoid-minimal-gatsby.netlify.app/",
 		sameAs: [
-			"https://www.facebook.com/BroadSign",
-			"https://twitter.com/broadsign",
-			"https://www.linkedin.com/company/broadsign"
+			"https://www.facebook.com/MiniRepr",
+			"https://twitter.com/MiniRepr",
+			"https://www.linkedin.com/company/MiniRepr"
 		],
-		facebookAppID: "BroadSign",
-		twitterSiteID: "Broadsign",
-		twitterUserID: "@broadsign",
-		siteUrl: process.env.SITE_URL || "https://broadsign.com"
+		facebookAppID: "MiniRepr",
+		twitterSiteID: "MiniRepr",
+		twitterUserID: "@MiniRepr",
+		siteUrl: process.env.SITE_URL || "https://lekevoid-minimal-gatsby.netlify.app/"
 	},
 	flags: {
 		PRESERVE_WEBPACK_CACHE: true
