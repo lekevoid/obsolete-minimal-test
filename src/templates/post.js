@@ -134,7 +134,6 @@ export default function BlogPost(props) {
 		return [];
 	}, [post]);
 
-
 	const seo = {
 		title: title,
 		description: seoDescription,
